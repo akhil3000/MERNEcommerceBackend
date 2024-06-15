@@ -9,7 +9,7 @@ const app=express();
 app.use(express.json());
 app.use(cors());
 mongoose.connect(URI).then(()=>{
-    console.log("Connected to MongoDB");
+    console.log("Connected to MongoDB ");
 })
 
 app.listen(PORT,()=>console.log("Server Started"));
